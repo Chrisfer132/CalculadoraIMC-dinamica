@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <main>
+        <section class="all">
+            <section class="conteudo">
+                <h1 class="conteudo__titulo">Calculadora IMC</h1>
+                <section class="informacoes">
+                    <div>
+                        <p>Altura:</p>
+                        <input id="altura" class="input" type="text" placeholder="Ex: 1.70">
+                    </div>
+                    <div>
+                        <p>Peso:</p>
+                        <input id="peso" class="input" type="text" placeholder="Ex: 60">
+                    </div>
+                </section>
+                <div>
+                    <button onclick="calculo()" class="botao">Calcular</button>
+                </div>
+                <div id="resultado">
+                    <p></p>
+                </div>
+            </section>
+            <img id="imagem" src="imagens/secreta.png" alt="">
+            <dialog>
+                    <h1>Tabela Informativa</h1>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Magreza: Menor que 18,5</li>
+                        <li>Normal: Entre 18,5 e 24,9</li>
+                        <li>Sobrepeso: Entre 25,0 e 29,9</li>
+                        <li>Obesidade: Entre 30,0 e 39,9</li>
+                        <li>Obesidade Grave: Maior que 40,0</li>
+                    </ul>
+                <button id="botao-close">Fechar</button>
+            </dialog>
+           
+        </section>
+
+        <section>
+            <button class="botao-model" id="botao" onclick="abrirModal()">Abrir a tabela</button>
+        </section>
+        
+    </main>
+    
+
+    <footer class="rodape">
+        <p>Desenvolvido por Christian Gauer</p>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+
+</html>
